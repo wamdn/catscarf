@@ -1,0 +1,518 @@
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+  line-height: 26px;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+/*//////////////////
+Base
+//////////////////*/
+p, h1, h2, h3, h4,{
+	margin-bottom: 0;
+	font-weight: 400;
+}
+h1, h2, h3, h4, footer{
+	font-family: 'Playfair Display SC', serif;
+}
+p, .menu a{
+	font-family: 'Alice', serif;
+}
+p{
+	font-size: 1.3125rem;
+}
+a{
+	text-decoration: none;
+	color: inherit;
+}
+header a, .details{
+	font-family: 'Sacramento', cursive;
+}
+a.fa{
+	font-family: 'FontAwesome';
+}
+.{
+	height: 50px;
+}
+header{
+	min-height: 100vh;
+	background: transparent;
+}
+.parallax-1{
+	min-height: 713px;
+	background: transparent;
+}
+.parallax-2{
+	min-height: 535px;
+	background: transparent;
+}
+
+/*///////// bgcolor /////////*/
+.about{
+	background: rgb(244, 239, 222);
+}
+footer{
+	background: rgb(219, 165, 57);
+}
+footer div{
+	background: rgb(128, 95, 30);
+
+}
+/*//////////////////
+Menu
+//////////////////*/
+.menu{
+	margin-top: -268px;
+
+	background: #fff;
+
+	position: relative;
+
+	transition: .3s margin ease-in-out;
+
+	z-index: 1;
+}
+	.menu .wrapper{
+		display: flex;
+		flex-direction: column;
+	}
+	.menu .wrapper>a{
+		padding: 20px 0;
+		width: 100%;
+		border-bottom: 1px solid rgba(0,0,0,0.1);
+		text-align: center;
+	}
+	.btn{
+		background-color: #fff;
+
+		height: 50px;
+		width: 100%;
+
+		position: absolute;
+		top:100%;
+
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: space-between;
+
+		padding: 0 20px 0 10px;
+	}
+	.cat-btn{
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+	}
+	.cat-btn .logo{
+		height: 25px;
+		margin-right: 10px;
+	}
+	img[src$="logo-white.svg"]{
+	    display: none;
+	}
+	img[src$="scarf.svg"]{
+	    display: none;
+	}
+	.cat-btn h1{
+		font-size: 0.75rem;
+		font-weight: 400;
+		letter-spacing: 0.4rem;
+	}
+/*//////////////////
+Header
+//////////////////*/
+
+header{
+	background: url("../img/img_homepage_slider1.jpg") center;
+	background-size: cover;
+
+	color: #fff;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+	header h2{
+		font-size: 2.25rem;
+		font-style: italic;
+		font-weight: 400;
+
+		border-bottom: 1px solid #fff;
+		padding-bottom: 20px;
+		width: 80%;
+
+		text-align: center;
+	}
+	header a{
+		font-size: 3.375rem;
+	}
+/*//////////////////
+Main
+//////////////////*/
+
+/*///////// collection 2015 /////////*/
+.collection{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	text-align: center;
+
+	padding-bottom: 80px;
+}
+	main h3{
+		font-weight: 400;
+		font-style: italic;
+		font-size: 2.25rem;
+
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+
+		position: relative;
+	}
+
+		main h3 span{
+			font-style: normal;
+			font-size: 0.75rem;
+			letter-spacing: 0.4rem;
+		}
+		main h3::after{
+			content: '';
+			display: block;
+			height: 1px;
+			width: 60%;
+			background: #000;
+
+			position: absolute;
+			bottom: -50%;
+
+			left: 50%;
+			transform: translateX(-50%);
+		}
+
+h4{
+	font-size: 2.25rem;
+	font-weight: 400;
+	position: relative;
+}
+	h4 span{
+		font-size: 1.375rem;
+	}
+	.collection h4::after{
+		content: '';
+		display: block;
+		height: 1px;
+		width: 100%;
+		background: rgb(199, 199, 199);
+
+		position: absolute;
+		bottom: -50%;
+	}
+.details{
+	padding-top: 18px;
+	font-size: 2.25rem;
+}
+
+/*///////// about /////////*/
+.about{
+	text-align: center;
+}
+	.about .wrapper{
+		padding:20px 8% 120px;
+	}
+		.about .wrapper>p{
+			line-height: 35px;
+		}
+		.spec p{
+			font-size: 1rem;
+		}
+		.spec h4::after{
+		content: '';
+		display: block;
+		height: 1px;
+		width: 60%;
+		background: #000;
+
+		position: absolute;
+		bottom: -50%;
+
+		left: 50%;
+		transform: translateX(-50%);
+	}
+	h3 .span{
+		line-height: 0.75rem;
+	}
+
+/*//////////////////
+Footer
+//////////////////*/
+footer{
+	color: #fff;
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	text-align: center;
+}
+	footer figure{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		margin: .7rem;
+	}
+		footer img{
+			height: 80px;
+			padding: .5rem;
+		}
+		footer figcaption{
+			letter-spacing: 0.3rem;
+			font-size: 0.75rem;
+		}
+	footer nav{
+		font-size: 1.5rem;
+		width: 80%;
+		max-width: 150px;
+
+		display: flex;
+		justify-content: space-between;
+	}
+	footer small{
+		font-size: 1.3125rem;
+		width: 80%;
+		max-width: 450px;
+
+		margin: 25px 0;
+	}
+	footer div{
+		width: 100%;
+		padding: 10px 0;
+		font-size: 0.75rem;
+	}
+/*//////////////////
+Media queries
+//////////////////*/
+
+@media screen and (min-width: 960px){
+	a:hover ,.details:hover{
+		color: rgb(199, 217, 59);
+		transition: .3s ease-in-out;
+	}
+}
+/* iPads (portrait and landscape) ----------- */
+@media screen and (min-width : 768px) {
+	/*//////////////////
+	Main
+	//////////////////*/
+
+	/*///////// header /////////*/
+
+	header h2{
+		font-size: 5.0625rem;
+		line-height: 5.0625rem;
+	}
+	header a{
+		font-size: 4.5rem;
+	}
+
+	/*///////// collection 2015 /////////*/
+	.collection{
+			padding-bottom: 150px;
+		}
+		main h3{
+			font-size: 4.5rem;
+		}
+		.collection h3:after{
+			top: 200%;
+			width: 200%;
+		}
+
+	/*///////// scarfs /////////*/
+
+	.scarfs{
+		display: flex;
+	}
+		.scarf{
+			width: 33%;
+			padding: 0 10px;
+		}
+			.scarf img{
+				width: 100%;
+			}
+
+	/*///////// about /////////*/
+
+	.about h3{
+		line-height: 5.0625rem;
+	}
+	.about h3:after{
+		line-height: 0.75rem;
+		bottom: 0;
+	}
+	.about h3 span{
+		line-height: .75rem;
+	}
+	.specs{
+		display: flex;
+	}
+		.spec{
+			width: 33%;
+			padding: 0 10px;
+		}
+
+	/*///////// Footer /////////*/
+
+	footer small {
+	    max-width: none;
+}
+
+/* Desktops and laptops ----------- */
+@media screen and (min-width : 1024px) {
+	/*///////// menu /////////*/
+		.menu{
+			margin-top: 0;
+			color: #fff;
+
+			height: auto;
+			width: 100%;
+			background: transparent;
+
+			display: flex;
+			justify-content: center;
+
+			position: fixed;
+			top:10px;
+			left: 50%;
+			transform: translateX(-50%);
+		}
+			.menu .wrapper{
+				flex-direction: row;
+				align-items: center;
+				width: 100%;
+				max-width: 700px;
+			}
+				.menu .wrapper>a{
+					padding-bottom: 10px;
+					border-bottom: 1px solid rgba(255,255,255,.3);
+				}
+		.btn{
+			position: static;
+			margin-top: 50px;
+			background: transparent;
+			padding-left: 40px;
+		}
+		.cat-btn{
+			display: flex;
+			flex-direction: column;
+
+		}
+			.cat-btn .logo {
+	    		height: 60px;
+	    	}
+	    	img[src$="logo.svg"]{
+	    		display: none;
+	    	}
+	    	img[src$="logo-white.svg"]{
+	    		display: block;
+			}
+			img[src$="scarf.svg"]{
+	   		 	display: none;
+			}
+	    	.fa-shopping-cart{
+	    		position: absolute;
+	    		top: 50%;
+	    		right: 50px;
+	    		transform: translateY(-50%);
+	    	}
+	/*///////// menu .active /////////*/
+		.active{
+			background: #fff;
+			color: #000;
+			top:0;
+		}
+			.menu .wrapper{
+				max-width: 550px;
+			}
+		.active .logo {
+	    	height: 30px;
+	    }
+	   	.active h1{
+			display: none;
+	   	}
+	    .active .btn{
+			margin-top: 0px;
+		}
+		.active img[src$="logo.svg"]{
+	    	display: block;
+	    }
+	    .active img[src$="logo-white.svg"]{
+	    	display: none;
+		}
+		.active img[src$="scarf.svg"]{
+	    	display: block;
+		}
+		.active .back-to-top{
+	    	position: absolute;
+            top:-50px;
+	    	left:30px;
+            transition: top 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+		}
+        .active .back-to-top:hover{
+            top:-25px;
+        }
+	/*///////// scarfs /////////*/
+		.scarf{
+			position: relative;
+		}
+			.product{
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%,-50%);
+
+				visibility: hidden;
+
+				background-color: rgba(29, 26, 25, 0.5);
+				border-radius: 50%;
+
+				width: 300px;
+				height: 300px;
+
+				padding: 20px;
+
+				color: #fff;
+			}
+				.product h4{
+					padding-top: 2px;
+					transition: .2s ease-in-out;
+					color: rgba(255, 255, 255, 0);
+				}
+				.details{
+					padding-top: 40px;
+					transition: .2s ease-in-out;
+					color: rgba(255, 255, 255, 0);
+				}
+				.product h4:after{
+					background-color: rgba(199, 199, 199, 0);
+				}
+			.scarf:hover .product{
+				visibility: visible;
+			}
+				.scarf:hover .product h4{
+					padding-top: 0;
+					color: rgba(255, 255, 255, 1);
+				}
+				.scarf:hover .details{
+					padding-top: 18px;
+					color: rgba(255, 255, 255, 1);
+				}
+				.scarf:hover .product h4:after{
+					background-color: rgba(199, 199, 199, 1);
+				}
+				.scarf:hover .details:hover{
+					color: rgb(199, 217, 59);
+				}
+}
